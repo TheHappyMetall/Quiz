@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    teal,
+    white
+  );
+}
+
+.text {
+  grid-column: 1/13;
+  text-align: center;
+  grid-row: 1;
+  color: white;
+  background-color: white;
+  border-bottom: 1px solid teal;
+  color: teal;
+  padding: 7px;
+  height: fit-content;
+  font-size: 1.2em;
+}
+
+.wrapper {
+  margin: auto;
+  margin-top: 25vh;
+  background-color: white;
+  height: 350px;
+  width: 500px;
+  border: 1px solid teal;
+  box-shadow: 1px 1px 7px 1px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+
+.answer,
+label > span,
+li {
+  cursor: pointer;
+}
+
+#list {
+  grid-row: 5/17;
+  grid-column: 2/12;
+  font-size: 1.7em;
+  color: teal;
+  list-style-type: none;
+  text-align: center;
+  align-self: center;
+}
+#list > li {
+  margin: 0.6em 0;
+  border-bottom: 1px dotted teal;
+}
+
+.main-click {
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  background-color: white;
+  grid-row: 20;
+  grid-column: 1/13;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-top: 1px solid teal;
+  color: teal;
+}
+
+.main-click:hover {
+  background-color: teal;
+  color: white;
+}
+
+.numbersQuestions {
+  display: none;
+  grid-column: span 12;
+  grid-row: 2;
+  background-color: teal;
+  text-align: center;
+  padding: 3px;
+  color: white;
+}
+
+
+/*  */
+input[type='radio']:after {
+   width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative; 
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible; 
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+   width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative; 
+  background-color: teal;
+  content: '';
+  display: inline-block;
+  visibility: visible; 
+  border: 2px solid white;
+}
+
+
+
+@media (max-width: 501px) {
+  .wrapper {
+    width: 95%;
+  }  
+}
+
