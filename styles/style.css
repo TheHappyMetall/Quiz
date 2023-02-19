@@ -43,8 +43,7 @@ body {
 }
 
 .answer,
-label > span,
-li {
+label > span {
   cursor: pointer;
 }
 
