@@ -418,7 +418,7 @@ function getNowHours() {
     case 21:
     case 22:
     case 23:
-      nowMessage = 'Доброй ночи'   
+      nowMessage = 'Добрый вечер'   
     break;
   }
   return nowMessage
