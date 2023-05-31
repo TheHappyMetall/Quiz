@@ -1,2 +1,2 @@
-# Taro
-Проект доступен по ссылке: https://thehappymetall.github.io/Taro/
+# Quiz
+Проект доступен по ссылке: https://thehappymetall.github.io/Quiz/
